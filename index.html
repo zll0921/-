@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+    <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+    <style>
+        #gitalk-container {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+<body>
+    <div id="gitalk-container"></div>
+    <script>
+    var gitalk = new Gitalk({
+        clientID: 'b6b99b7066d21bb7fd53',
+          clientSecret: 'aaeba68a84f62114f5c92eac39bf4338b294f360',
+          accessToken: '6a2f4d91a1f188a2089e70c2a7b63628f3e9e664',
+          repo: 'zhny',
+          owner: 'zll0921',
+          admin: ['zll0921'],
+          id: 'Demo',
+          distractionFreeMode: true
+    })
+    gitalk.render('gitalk-container')
+    </script>
+</body>
+</html>
